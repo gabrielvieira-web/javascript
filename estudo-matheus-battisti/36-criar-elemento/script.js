@@ -24,3 +24,5 @@ var el = document.createElement("span")
 el.appendChild(document.createTextNode("Texto do span"))
 
 console.log(el)
+
+container.appendChild(el)
