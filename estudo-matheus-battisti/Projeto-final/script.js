@@ -20,10 +20,29 @@ function addTask() {
         // adiciona tarefa na lista
         const list = document.querySelector("#lista-tarefas")
 
+        console.log(novaTarefa)
+        console.log(list)
+
         list.appendChild(novaTarefa)
+        list.style.display = "block"
+
+        // adicionar o evento de remover
+        const removeBtn = novaTarefa.querySelector("icons-close").addEventListener("click", function(){
+
+            removeTask(this)
+
+        })
+
+        // limpar texto
+        document.querySelector("#tarefa").value = ""
 
     }
 
+}
+
+// funcao de remover tarefa
+function removeTask(task) {
+    console.log(task)
 }
 
 
